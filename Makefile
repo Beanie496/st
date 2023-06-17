@@ -6,6 +6,7 @@ include config.mk
 
 SRC = st.c x.c
 OBJ = $(SRC:.c=.o)
+STCFLAGS += -march=native -O2 -flto
 
 all: st
 
